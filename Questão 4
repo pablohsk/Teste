@@ -1,0 +1,34 @@
+def descobrir_interruptores():
+    interruptor_1 = True
+    interruptor_2 = False
+    interruptor_3 = False
+
+    import time
+    time.sleep(120)
+
+    interruptor_1 = False
+    interruptor_2 = True
+
+    time.sleep(120)
+
+    if interruptor_1:
+        print("A lâmpada conectada ao primeiro interruptor está acesa.")
+    else:
+        print("A lâmpada conectada ao primeiro interruptor está apagada e fria.")
+    
+    if interruptor_2:
+        print("A lâmpada conectada ao segundo interruptor está acesa.")
+    else:
+        print("A lâmpada conectada ao segundo interruptor está apagada e fria.")
+
+    if interruptor_3:
+        print("A lâmpada conectada ao terceiro interruptor está acesa.")
+    else:
+        print("A lâmpada conectada ao terceiro interruptor está apagada e quente.")
+
+descobrir_interruptores()
+
+
+# Ligar o primeiro interruptor e espere 2 minutos.
+# Desligar o primeiro interruptor e ligue o segundo interruptor.
+# Entre na sala. A lâmpada acesa está conectada ao segundo interruptor, a lâmpada apagada e fria está conectada ao primeiro interruptor e a lâmpada apagada e quente está conectada ao terceiro interruptor.
